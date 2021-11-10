@@ -36,8 +36,12 @@ html, body {
   font-weight: 600;
 }
 
-#header .wavy.navbar {
+#header .navbar {
   padding: 0 0;
+}
+
+#header .navbar .navbar-brand img {
+  width: 20%;
 }
 
 #header .headerBtn button {
@@ -85,6 +89,16 @@ html, body {
   }
   #header .container .headerBtn {
     display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #header .container .navbar-brand {
+    position: relative;
+    left: 60px;
+  }
+  #header .container .navbar-brand img {
+    width: 10%;
   }
 }
 

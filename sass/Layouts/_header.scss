@@ -7,8 +7,13 @@
     background-color: transparent;
     transition: all .3s;
     @include styleText($color-black-2,$fs-1,$fw-3);
-    .wavy.navbar{
+    .navbar{
         padding: 0 0;
+        .navbar-brand{
+            img{
+                width: 20%;
+            }
+        }
     }
     .headerBtn{
         button{
@@ -52,6 +57,19 @@
             }
             .headerBtn{
                 display: none;
+            }
+        }
+    }
+}
+@include mediaQuery("medium"){
+    #header{
+        .container{
+            .navbar-brand{
+                position: relative;
+                left: 60px;
+                img{
+                    width: 10%;
+                }
             }
         }
     }
